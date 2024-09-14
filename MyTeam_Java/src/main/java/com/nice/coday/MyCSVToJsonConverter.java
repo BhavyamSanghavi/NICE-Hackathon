@@ -9,14 +9,12 @@ import java.util.Arrays;
 
 public class MyCSVToJsonConverter {
 
-    public void Converter(String csvFile) {
-        // String csvFile = "path/to/your/file.csv";
-        // for(int i = 0; i < args.length; i++) System.out.println(args[i]);
+    public JSONArray  Converter(String csvFile) {
         
-
+        JSONArray jsonArray = new JSONArray();
         try (CSVReader reader = new CSVReader(new FileReader(csvFile))) {
             String[] headers = reader.readNext(); // Read the first line for headers
-            JSONArray jsonArray = new JSONArray();
+            
             
             String[] line;
             while ((line = reader.readNext()) != null) {
@@ -27,9 +25,12 @@ public class MyCSVToJsonConverter {
                 jsonArray.put(jsonObject);
             }
             
-            System.out.println(jsonArray.toString(4)); // Pretty print with 4 spaces indent
+            
         } catch (Exception e) {
+            
             e.printStackTrace();
+            
         }
+        return jsonArray;
     }
 }

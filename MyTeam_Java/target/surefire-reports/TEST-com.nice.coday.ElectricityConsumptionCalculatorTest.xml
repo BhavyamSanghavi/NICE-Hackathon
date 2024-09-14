@@ -1,539 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.158" tests="7" errors="7" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.587" tests="7" errors="7" skipped="0" failures="0">
   <properties>
-    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
-    <property name="java.specification.version" value="11"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="java.specification.version" value="21"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.class.path" value="/workspaces/NICE-Hackathon/MyTeam_Java/target/test-classes:/workspaces/NICE-Hackathon/MyTeam_Java/target/classes:/home/codespace/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/codespace/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/codespace/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/home/codespace/.m2/repository/org/apache/poi/poi-ooxml/5.2.5/poi-ooxml-5.2.5.jar:/home/codespace/.m2/repository/org/apache/poi/poi/5.2.5/poi-5.2.5.jar:/home/codespace/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/codespace/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/home/codespace/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.5/poi-ooxml-lite-5.2.5.jar:/home/codespace/.m2/repository/org/apache/xmlbeans/xmlbeans/5.2.0/xmlbeans-5.2.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar:/home/codespace/.m2/repository/commons-io/commons-io/2.15.0/commons-io-2.15.0.jar:/home/codespace/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/home/codespace/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/codespace/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/codespace/.m2/repository/com/opencsv/opencsv/5.5.2/opencsv-5.5.2.jar:/home/codespace/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-text/1.9/commons-text-1.9.jar:/home/codespace/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/codespace/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/codespace/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/codespace/.m2/repository/org/json/json/20210307/json-20210307.jar:"/>
     <property name="java.vm.vendor" value="Microsoft"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://www.microsoft.com"/>
-    <property name="user.timezone" value=""/>
-    <property name="java.vm.specification.version" value="11"/>
     <property name="os.name" value="Linux"/>
+    <property name="java.vm.specification.version" value="21"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.boot.library.path" value="/opt/java/11.0.14/lib"/>
-    <property name="sun.java.command" value="/workspaces/NICE-Hackathon/MyTeam_Java/target/surefire/surefirebooter15513974679491938146.jar /workspaces/NICE-Hackathon/MyTeam_Java/target/surefire 2024-09-14T08-11-32_707-jvmRun1 surefire8538875835102210208tmp surefire_01962369998848608233tmp"/>
+    <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/21.0.4-ms/lib"/>
+    <property name="sun.java.command" value="/workspaces/NICE-Hackathon/MyTeam_Java/target/surefire/surefirebooter714755562856078410.jar /workspaces/NICE-Hackathon/MyTeam_Java/target/surefire 2024-09-14T08-46-23_314-jvmRun1 surefire11804900909029151560tmp surefire_017776115929857141078tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspaces/NICE-Hackathon/MyTeam_Java/target/test-classes:/workspaces/NICE-Hackathon/MyTeam_Java/target/classes:/home/codespace/.m2/repository/junit/junit/4.12/junit-4.12.jar:/home/codespace/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/home/codespace/.m2/repository/org/mockito/mockito-all/1.10.19/mockito-all-1.10.19.jar:/home/codespace/.m2/repository/org/apache/poi/poi-ooxml/5.2.5/poi-ooxml-5.2.5.jar:/home/codespace/.m2/repository/org/apache/poi/poi/5.2.5/poi-5.2.5.jar:/home/codespace/.m2/repository/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/codespace/.m2/repository/com/zaxxer/SparseBitSet/1.3/SparseBitSet-1.3.jar:/home/codespace/.m2/repository/org/apache/poi/poi-ooxml-lite/5.2.5/poi-ooxml-lite-5.2.5.jar:/home/codespace/.m2/repository/org/apache/xmlbeans/xmlbeans/5.2.0/xmlbeans-5.2.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-compress/1.25.0/commons-compress-1.25.0.jar:/home/codespace/.m2/repository/commons-io/commons-io/2.15.0/commons-io-2.15.0.jar:/home/codespace/.m2/repository/com/github/virtuald/curvesapi/1.08/curvesapi-1.08.jar:/home/codespace/.m2/repository/org/apache/logging/log4j/log4j-api/2.21.1/log4j-api-2.21.1.jar:/home/codespace/.m2/repository/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar:/home/codespace/.m2/repository/com/opencsv/opencsv/5.5.2/opencsv-5.5.2.jar:/home/codespace/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/home/codespace/.m2/repository/org/apache/commons/commons-text/1.9/commons-text-1.9.jar:/home/codespace/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/home/codespace/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/codespace/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/home/codespace/.m2/repository/org/json/json/20210307/json-20210307.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/codespace"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2022-02-08"/>
-    <property name="java.home" value="/opt/java/11.0.14"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="/usr/local/sdkman/candidates/java/21.0.4-ms"/>
     <property name="file.separator" value="/"/>
     <property name="basedir" value="/workspaces/NICE-Hackathon/MyTeam_Java"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/workspaces/NICE-Hackathon/MyTeam_Java/target/surefire/surefirebooter15513974679491938146.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/NICE-Hackathon/MyTeam_Java/target/surefire/surefirebooter714755562856078410.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="11.0.14.1+1-LTS"/>
+    <property name="java.runtime.version" value="21.0.4+7-LTS"/>
     <property name="user.name" value="codespace"/>
+    <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="6.5.0-1025-azure"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Microsoft-31205"/>
+    <property name="java.vendor.version" value="Microsoft-9889606"/>
     <property name="localRepository" value="/home/codespace/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/microsoft/openjdk/issues"/>
     <property name="java.io.tmpdir" value="/tmp"/>
-    <property name="java.version" value="11.0.14.1"/>
+    <property name="java.version" value="21.0.4"/>
     <property name="user.dir" value="/workspaces/NICE-Hackathon/MyTeam_Java"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="native.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
-    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
     <property name="java.vendor" value="Microsoft"/>
-    <property name="java.vm.version" value="11.0.14.1+1-LTS"/>
+    <property name="java.vm.version" value="21.0.4+7-LTS"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="55.0"/>
+    <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="test1" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.061">
+  <testcase name="test1" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.065">
     <error message="Not implemented yet." type="org.apache.poi.ss.formula.eval.NotImplementedException">org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test1(ElectricityConsumptionCalculatorTest.java:35)
 </error>
-    <system-out><![CDATA[HIIIIIII KIRAN KANKARIYA
-src/main/resources/TestCase1/VehicleTypeInfo.csv
-[
-    {
-        "VehicleType": "V1",
-        "Mileage": "50",
-        "NumberOfUnitsForFullyCharge": "18"
-    },
-    {
-        "VehicleType": "V2",
-        "Mileage": "60",
-        "NumberOfUnitsForFullyCharge": "9"
-    }
-]
+    <system-out><![CDATA[src/main/resources/TestCase1/VehicleTypeInfo.csv
+480
 ]]></system-out>
   </testcase>
-  <testcase name="test2" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.003">
+  <testcase name="test2" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.008">
     <error message="Not implemented yet." type="org.apache.poi.ss.formula.eval.NotImplementedException">org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test2(ElectricityConsumptionCalculatorTest.java:92)
 </error>
-    <system-out><![CDATA[HIIIIIII KIRAN KANKARIYA
-src/main/resources/TestCase2/VehicleTypeInfo.csv
-[
-    {
-        "VehicleType": "V1",
-        "Mileage": "80",
-        "NumberOfUnitsForFullyCharge": "25"
-    },
-    {
-        "VehicleType": "V2",
-        "Mileage": "70",
-        "NumberOfUnitsForFullyCharge": "24"
-    },
-    {
-        "VehicleType": "V3",
-        "Mileage": "84",
-        "NumberOfUnitsForFullyCharge": "25"
-    },
-    {
-        "VehicleType": "V4",
-        "Mileage": "50",
-        "NumberOfUnitsForFullyCharge": "17"
-    },
-    {
-        "VehicleType": "V5",
-        "Mileage": "65",
-        "NumberOfUnitsForFullyCharge": "20"
-    }
-]
+    <system-out><![CDATA[src/main/resources/TestCase2/VehicleTypeInfo.csv
+300
 ]]></system-out>
   </testcase>
-  <testcase name="test3" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.004">
+  <testcase name="test3" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.01">
     <error message="Not implemented yet." type="org.apache.poi.ss.formula.eval.NotImplementedException">org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test3(ElectricityConsumptionCalculatorTest.java:125)
 </error>
-    <system-out><![CDATA[HIIIIIII KIRAN KANKARIYA
-src/main/resources/TestCase3/VehicleTypeInfo.csv
-[
-    {
-        "VehicleType": "V1",
-        "Mileage": "76",
-        "NumberOfUnitsForFullyCharge": "16"
-    },
-    {
-        "VehicleType": "V2",
-        "Mileage": "64",
-        "NumberOfUnitsForFullyCharge": "20"
-    },
-    {
-        "VehicleType": "V3",
-        "Mileage": "45",
-        "NumberOfUnitsForFullyCharge": "19"
-    },
-    {
-        "VehicleType": "V4",
-        "Mileage": "89",
-        "NumberOfUnitsForFullyCharge": "13"
-    },
-    {
-        "VehicleType": "V5",
-        "Mileage": "55",
-        "NumberOfUnitsForFullyCharge": "10"
-    }
-]
+    <system-out><![CDATA[src/main/resources/TestCase3/VehicleTypeInfo.csv
+360
 ]]></system-out>
   </testcase>
-  <testcase name="test4" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.003">
+  <testcase name="test4" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.007">
     <error message="Not implemented yet." type="org.apache.poi.ss.formula.eval.NotImplementedException">org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test4(ElectricityConsumptionCalculatorTest.java:151)
 </error>
-    <system-out><![CDATA[HIIIIIII KIRAN KANKARIYA
-src/main/resources/TestCase4/VehicleTypeInfo.csv
-[
-    {
-        "VehicleType": "V1",
-        "Mileage": "80",
-        "NumberOfUnitsForFullyCharge": "11"
-    },
-    {
-        "VehicleType": "V2",
-        "Mileage": "74",
-        "NumberOfUnitsForFullyCharge": "9"
-    },
-    {
-        "VehicleType": "V3",
-        "Mileage": "56",
-        "NumberOfUnitsForFullyCharge": "8"
-    },
-    {
-        "VehicleType": "V4",
-        "Mileage": "80",
-        "NumberOfUnitsForFullyCharge": "20"
-    },
-    {
-        "VehicleType": "V5",
-        "Mileage": "95",
-        "NumberOfUnitsForFullyCharge": "11"
-    },
-    {
-        "VehicleType": "V6",
-        "Mileage": "120",
-        "NumberOfUnitsForFullyCharge": "19"
-    },
-    {
-        "VehicleType": "V7",
-        "Mileage": "67",
-        "NumberOfUnitsForFullyCharge": "14"
-    },
-    {
-        "VehicleType": "V8",
-        "Mileage": "140",
-        "NumberOfUnitsForFullyCharge": "22"
-    },
-    {
-        "VehicleType": "V9",
-        "Mileage": "69",
-        "NumberOfUnitsForFullyCharge": "19"
-    },
-    {
-        "VehicleType": "V10",
-        "Mileage": "88",
-        "NumberOfUnitsForFullyCharge": "17"
-    }
-]
+    <system-out><![CDATA[src/main/resources/TestCase4/VehicleTypeInfo.csv
+480
 ]]></system-out>
   </testcase>
-  <testcase name="test5" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.004">
+  <testcase name="test5" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.051">
     <error message="Not implemented yet." type="org.apache.poi.ss.formula.eval.NotImplementedException">org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test5(ElectricityConsumptionCalculatorTest.java:194)
 </error>
-    <system-out><![CDATA[HIIIIIII KIRAN KANKARIYA
-src/main/resources/TestCase5/VehicleTypeInfo.csv
-[
-    {
-        "VehicleType": "V1",
-        "Mileage": "101",
-        "NumberOfUnitsForFullyCharge": "19"
-    },
-    {
-        "VehicleType": "V2",
-        "Mileage": "145",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V3",
-        "Mileage": "133",
-        "NumberOfUnitsForFullyCharge": "17"
-    },
-    {
-        "VehicleType": "V4",
-        "Mileage": "100",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V5",
-        "Mileage": "120",
-        "NumberOfUnitsForFullyCharge": "23"
-    },
-    {
-        "VehicleType": "V6",
-        "Mileage": "146",
-        "NumberOfUnitsForFullyCharge": "10"
-    },
-    {
-        "VehicleType": "V7",
-        "Mileage": "122",
-        "NumberOfUnitsForFullyCharge": "9"
-    },
-    {
-        "VehicleType": "V8",
-        "Mileage": "130",
-        "NumberOfUnitsForFullyCharge": "17"
-    },
-    {
-        "VehicleType": "V9",
-        "Mileage": "105",
-        "NumberOfUnitsForFullyCharge": "23"
-    },
-    {
-        "VehicleType": "V10",
-        "Mileage": "110",
-        "NumberOfUnitsForFullyCharge": "19"
-    }
-]
+    <system-out><![CDATA[src/main/resources/TestCase5/VehicleTypeInfo.csv
+540
 ]]></system-out>
   </testcase>
-  <testcase name="test6" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.008">
+  <testcase name="test6" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.178">
     <error message="Not implemented yet." type="org.apache.poi.ss.formula.eval.NotImplementedException">org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test6(ElectricityConsumptionCalculatorTest.java:235)
 </error>
-    <system-out><![CDATA[HIIIIIII KIRAN KANKARIYA
-src/main/resources/TestCase6/VehicleTypeInfo.csv
-[
-    {
-        "VehicleType": "V1",
-        "Mileage": "60",
-        "NumberOfUnitsForFullyCharge": "9"
-    },
-    {
-        "VehicleType": "V2",
-        "Mileage": "86",
-        "NumberOfUnitsForFullyCharge": "10"
-    },
-    {
-        "VehicleType": "V3",
-        "Mileage": "67",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V4",
-        "Mileage": "102",
-        "NumberOfUnitsForFullyCharge": "14"
-    },
-    {
-        "VehicleType": "V5",
-        "Mileage": "90",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V6",
-        "Mileage": "76",
-        "NumberOfUnitsForFullyCharge": "17"
-    },
-    {
-        "VehicleType": "V7",
-        "Mileage": "69",
-        "NumberOfUnitsForFullyCharge": "22"
-    },
-    {
-        "VehicleType": "V8",
-        "Mileage": "95",
-        "NumberOfUnitsForFullyCharge": "20"
-    },
-    {
-        "VehicleType": "V9",
-        "Mileage": "115",
-        "NumberOfUnitsForFullyCharge": "13"
-    },
-    {
-        "VehicleType": "V10",
-        "Mileage": "108",
-        "NumberOfUnitsForFullyCharge": "17"
-    },
-    {
-        "VehicleType": "V11",
-        "Mileage": "97",
-        "NumberOfUnitsForFullyCharge": "14"
-    },
-    {
-        "VehicleType": "V12",
-        "Mileage": "91",
-        "NumberOfUnitsForFullyCharge": "12"
-    },
-    {
-        "VehicleType": "V13",
-        "Mileage": "80",
-        "NumberOfUnitsForFullyCharge": "11"
-    },
-    {
-        "VehicleType": "V14",
-        "Mileage": "66",
-        "NumberOfUnitsForFullyCharge": "22"
-    },
-    {
-        "VehicleType": "V15",
-        "Mileage": "79",
-        "NumberOfUnitsForFullyCharge": "13"
-    },
-    {
-        "VehicleType": "V16",
-        "Mileage": "71",
-        "NumberOfUnitsForFullyCharge": "21"
-    },
-    {
-        "VehicleType": "V17",
-        "Mileage": "116",
-        "NumberOfUnitsForFullyCharge": "20"
-    },
-    {
-        "VehicleType": "V18",
-        "Mileage": "107",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V19",
-        "Mileage": "114",
-        "NumberOfUnitsForFullyCharge": "11"
-    },
-    {
-        "VehicleType": "V20",
-        "Mileage": "74",
-        "NumberOfUnitsForFullyCharge": "15"
-    }
-]
+    <system-out><![CDATA[src/main/resources/TestCase6/VehicleTypeInfo.csv
+540
 ]]></system-out>
   </testcase>
-  <testcase name="test7" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.008">
+  <testcase name="test7" classname="com.nice.coday.ElectricityConsumptionCalculatorTest" time="0.221">
     <error message="Not implemented yet." type="org.apache.poi.ss.formula.eval.NotImplementedException">org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test7(ElectricityConsumptionCalculatorTest.java:280)
 </error>
-    <system-out><![CDATA[HIIIIIII KIRAN KANKARIYA
-src/main/resources/TestCase7/VehicleTypeInfo.csv
-[
-    {
-        "VehicleType": "V1",
-        "Mileage": "55",
-        "NumberOfUnitsForFullyCharge": "18"
-    },
-    {
-        "VehicleType": "V2",
-        "Mileage": "149",
-        "NumberOfUnitsForFullyCharge": "19"
-    },
-    {
-        "VehicleType": "V3",
-        "Mileage": "147",
-        "NumberOfUnitsForFullyCharge": "21"
-    },
-    {
-        "VehicleType": "V4",
-        "Mileage": "89",
-        "NumberOfUnitsForFullyCharge": "19"
-    },
-    {
-        "VehicleType": "V5",
-        "Mileage": "55",
-        "NumberOfUnitsForFullyCharge": "9"
-    },
-    {
-        "VehicleType": "V6",
-        "Mileage": "64",
-        "NumberOfUnitsForFullyCharge": "14"
-    },
-    {
-        "VehicleType": "V7",
-        "Mileage": "78",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V8",
-        "Mileage": "59",
-        "NumberOfUnitsForFullyCharge": "13"
-    },
-    {
-        "VehicleType": "V9",
-        "Mileage": "89",
-        "NumberOfUnitsForFullyCharge": "8"
-    },
-    {
-        "VehicleType": "V10",
-        "Mileage": "84",
-        "NumberOfUnitsForFullyCharge": "25"
-    },
-    {
-        "VehicleType": "V11",
-        "Mileage": "90",
-        "NumberOfUnitsForFullyCharge": "21"
-    },
-    {
-        "VehicleType": "V12",
-        "Mileage": "130",
-        "NumberOfUnitsForFullyCharge": "12"
-    },
-    {
-        "VehicleType": "V13",
-        "Mileage": "97",
-        "NumberOfUnitsForFullyCharge": "20"
-    },
-    {
-        "VehicleType": "V14",
-        "Mileage": "120",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V15",
-        "Mileage": "136",
-        "NumberOfUnitsForFullyCharge": "25"
-    },
-    {
-        "VehicleType": "V16",
-        "Mileage": "144",
-        "NumberOfUnitsForFullyCharge": "13"
-    },
-    {
-        "VehicleType": "V17",
-        "Mileage": "78",
-        "NumberOfUnitsForFullyCharge": "8"
-    },
-    {
-        "VehicleType": "V18",
-        "Mileage": "76",
-        "NumberOfUnitsForFullyCharge": "17"
-    },
-    {
-        "VehicleType": "V19",
-        "Mileage": "82",
-        "NumberOfUnitsForFullyCharge": "9"
-    },
-    {
-        "VehicleType": "V20",
-        "Mileage": "93",
-        "NumberOfUnitsForFullyCharge": "15"
-    },
-    {
-        "VehicleType": "V21",
-        "Mileage": "90",
-        "NumberOfUnitsForFullyCharge": "21"
-    },
-    {
-        "VehicleType": "V22",
-        "Mileage": "83",
-        "NumberOfUnitsForFullyCharge": "21"
-    },
-    {
-        "VehicleType": "V23",
-        "Mileage": "114",
-        "NumberOfUnitsForFullyCharge": "10"
-    },
-    {
-        "VehicleType": "V24",
-        "Mileage": "106",
-        "NumberOfUnitsForFullyCharge": "20"
-    },
-    {
-        "VehicleType": "V25",
-        "Mileage": "64",
-        "NumberOfUnitsForFullyCharge": "20"
-    },
-    {
-        "VehicleType": "V26",
-        "Mileage": "67",
-        "NumberOfUnitsForFullyCharge": "13"
-    },
-    {
-        "VehicleType": "V27",
-        "Mileage": "70",
-        "NumberOfUnitsForFullyCharge": "10"
-    },
-    {
-        "VehicleType": "V28",
-        "Mileage": "112",
-        "NumberOfUnitsForFullyCharge": "9"
-    },
-    {
-        "VehicleType": "V29",
-        "Mileage": "138",
-        "NumberOfUnitsForFullyCharge": "8"
-    },
-    {
-        "VehicleType": "V30",
-        "Mileage": "135",
-        "NumberOfUnitsForFullyCharge": "11"
-    }
-]
+    <system-out><![CDATA[src/main/resources/TestCase7/VehicleTypeInfo.csv
+480
 ]]></system-out>
   </testcase>
 </testsuite>
