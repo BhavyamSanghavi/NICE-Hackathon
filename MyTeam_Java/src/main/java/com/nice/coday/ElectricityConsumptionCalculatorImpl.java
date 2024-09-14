@@ -7,6 +7,7 @@ import org.apache.poi.ss.formula.eval.NotImplementedException;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Map;
 
 
 class TripClass {
@@ -43,21 +44,37 @@ public class ElectricityConsumptionCalculatorImpl implements ElectricityConsumpt
         // System.out.println(chargeTime.getJSONObject(0).getString("TimeToChargePerUnit"));
         
         
-        List<TripClass> vehicles = new ArrayList<>();
+        List<TripClass> trips = new ArrayList<>();
         for (int i = 0; i < tripDetails.length(); i++) {
             JSONObject jsonObject = tripDetails.getJSONObject(i);
-            vehicles.add(new TripClass(jsonObject));
+            trips.add(new TripClass(jsonObject));
         }
         
-        Map<String, Pair<Integer, Integer>> map = new HashMap<>();
+        Map<String, Pair<Integer, Integer>> vehicleMap = new HashMap<>();
         for (int i = 0; i < vehicle.length(); i++) {
             String vehicleType = jsonObject.getString("VehicleType");
             int numberOfUnitsForFullyCharge = jsonObject.getInt("NumberOfUnitsForFullyCharge");
             int mileage = jsonObject.getInt("Mileage");
             Pair<Integer, Integer> pair = new Pair<>(numberOfUnitsForFullyCharge, mileage);
-            map.put(vehicleType, pair);
+            vehicleMap.put(vehicleType, pair);
         }
-        
+
+        Map<Pair<Integer,Integer>,String> timeToChargeMap = new HashMap<>();
+        for (int i = 0; i < chargeTime.length(); i++) {
+            String vehicleType = jsonObject.getString("VehicleType");
+            int chargeStation = jsonObject.getString("ChargingStation");
+            int time = jsonObject.getInt("TimeToChargePerUnit");
+            Pair<Integer, Integer> pair = new Pair<>(vehicleType, chargeStation);
+            timeToChargeMap.put(pair, time);
+        }
+
+        Map<String,Integer> entryExitMap = new HashMap<>();
+        for (int i = 0; i < entryExit.length(); i++) {
+            String point = jsonObject.getString("EntryExitPoint");
+            int distance = jsonObject.getInt("DistanceFromStart");
+            entryExitMap.put(point, distance);
+        }
+
         throw new NotImplementedException("Not implemented yet.");
     }
 }
