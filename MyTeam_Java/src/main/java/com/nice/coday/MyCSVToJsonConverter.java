@@ -1,3 +1,5 @@
+package com.nice.coday;
+
 import com.opencsv.CSVReader;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -5,10 +7,12 @@ import org.json.JSONObject;
 import java.io.FileReader;
 import java.util.Arrays;
 
-public class CSVToJsonConverter {
+public class MyCSVToJsonConverter {
 
-    public static void main(String[] args) {
-        String csvFile = "path/to/your/file.csv";
+    public void Converter(String csvFile) {
+        // String csvFile = "path/to/your/file.csv";
+        // for(int i = 0; i < args.length; i++) System.out.println(args[i]);
+        
 
         try (CSVReader reader = new CSVReader(new FileReader(csvFile))) {
             String[] headers = reader.readNext(); // Read the first line for headers
