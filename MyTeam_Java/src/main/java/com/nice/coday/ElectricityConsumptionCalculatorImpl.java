@@ -8,6 +8,7 @@ import org.apache.poi.ss.formula.eval.NotImplementedException;
 import java.io.IOException;
 import java.util.List;
 
+
 class TripClass {
     private String vehicleType;
     private int remainingBatteryPercentage;
@@ -46,6 +47,15 @@ public class ElectricityConsumptionCalculatorImpl implements ElectricityConsumpt
         for (int i = 0; i < tripDetails.length(); i++) {
             JSONObject jsonObject = tripDetails.getJSONObject(i);
             vehicles.add(new TripClass(jsonObject));
+        }
+        
+        Map<String, Pair<Integer, Integer>> map = new HashMap<>();
+        for (int i = 0; i < vehicle.length(); i++) {
+            String vehicleType = jsonObject.getString("VehicleType");
+            int numberOfUnitsForFullyCharge = jsonObject.getInt("NumberOfUnitsForFullyCharge");
+            int mileage = jsonObject.getInt("Mileage");
+            Pair<Integer, Integer> pair = new Pair<>(numberOfUnitsForFullyCharge, mileage);
+            map.put(vehicleType, pair);
         }
         
         throw new NotImplementedException("Not implemented yet.");
