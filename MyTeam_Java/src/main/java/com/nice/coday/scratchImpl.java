@@ -1,6 +1,3 @@
-#include <bits/stdc++.h>
-using namespace std;
-
 class VehicleClass
 {
     public:
@@ -9,13 +6,13 @@ class VehicleClass
 
     VehicleClass(string vehicleType, string entryPoint, int batteryPercentage, string exitPoint)
     {
-        this->type=vehicleType;
-        this->capacity=getCapacity(this->type);
-        this->mileage=getMileage(this->type);
+        this.type=vehicleType;
+        this.capacity=getCapacity(this.type);
+        this.mileage=getMileage(this.type);
 
-        this->remainingBattery=batteryPercentage*capacity/100;
-        this->currentPos=positionOfPoint[entryPoint];
-        this->exit=positionOfPoint[exitPoint];
+        this.remainingBattery=batteryPercentage*capacity/100;
+        this.currentPos=positionOfPoint[entryPoint];
+        this.exit=positionOfPoint[exitPoint];
     }
 };
 
