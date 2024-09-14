@@ -1,11 +1,28 @@
 package com.nice.coday;
 import org.json.JSONArray;
 import org.json.JSONObject;
-
+import java.util.ArrayList;
 import org.apache.poi.ss.formula.eval.NotImplementedException;
 // import MyCSVToJsonConverter
 
 import java.io.IOException;
+import java.util.List;
+
+class TripClass {
+    private String vehicleType;
+    private int remainingBatteryPercentage;
+    private String entryPoint;
+    private String exitPoint;
+
+    // Constructor
+    public TripClass(JSONObject jsonObject) {
+        this.vehicleType = jsonObject.getString("VehicleType");
+        this.remainingBatteryPercentage = jsonObject.getInt("RemainingBatteryPercentage");
+        this.entryPoint = jsonObject.getString("EntryPoint");
+        this.exitPoint = jsonObject.getString("ExitPoint");
+    }
+}
+
 
 public class ElectricityConsumptionCalculatorImpl implements ElectricityConsumptionCalculator {
     @Override
@@ -22,12 +39,15 @@ public class ElectricityConsumptionCalculatorImpl implements ElectricityConsumpt
         JSONArray entryExit = obj.Converter(resourceInfo.entryExitPointInfoPath.normalize().toString());
         JSONArray chargingStation = obj.Converter(resourceInfo.chargingStationInfoPath.normalize().toString());
         JSONArray chargeTime = obj.Converter(resourceInfo.timeToChargeVehicleInfoPath.normalize().toString());
-        System.out.println(chargeTime.getJSONObject(0).getString("TimeToChargePerUnit"));
+        // System.out.println(chargeTime.getJSONObject(0).getString("TimeToChargePerUnit"));
         
         
-
-        // ConsumptionResult ans = new ConsumptionResult();
-        // return ans;
+        List<TripClass> vehicles = new ArrayList<>();
+        for (int i = 0; i < tripDetails.length(); i++) {
+            JSONObject jsonObject = tripDetails.getJSONObject(i);
+            vehicles.add(new TripClass(jsonObject));
+        }
+        
         throw new NotImplementedException("Not implemented yet.");
     }
 }

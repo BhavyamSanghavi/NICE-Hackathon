@@ -1,32 +1,32 @@
 -------------------------------------------------------------------------------
 Test set: com.nice.coday.ElectricityConsumptionCalculatorTest
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.587 s <<< FAILURE! - in com.nice.coday.ElectricityConsumptionCalculatorTest
-test1(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.065 s  <<< ERROR!
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0.838 s <<< FAILURE! - in com.nice.coday.ElectricityConsumptionCalculatorTest
+test1(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.097 s  <<< ERROR!
 org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test1(ElectricityConsumptionCalculatorTest.java:35)
 
-test2(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.008 s  <<< ERROR!
+test2(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.018 s  <<< ERROR!
 org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test2(ElectricityConsumptionCalculatorTest.java:92)
 
-test3(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.01 s  <<< ERROR!
+test3(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.013 s  <<< ERROR!
 org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test3(ElectricityConsumptionCalculatorTest.java:125)
 
-test4(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.007 s  <<< ERROR!
+test4(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.011 s  <<< ERROR!
 org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test4(ElectricityConsumptionCalculatorTest.java:151)
 
-test5(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.051 s  <<< ERROR!
+test5(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.068 s  <<< ERROR!
 org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test5(ElectricityConsumptionCalculatorTest.java:194)
 
-test6(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.178 s  <<< ERROR!
+test6(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.249 s  <<< ERROR!
 org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test6(ElectricityConsumptionCalculatorTest.java:235)
 
-test7(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.221 s  <<< ERROR!
+test7(com.nice.coday.ElectricityConsumptionCalculatorTest)  Time elapsed: 0.331 s  <<< ERROR!
 org.apache.poi.ss.formula.eval.NotImplementedException: Not implemented yet.
 	at com.nice.coday.ElectricityConsumptionCalculatorTest.test7(ElectricityConsumptionCalculatorTest.java:280)
 
